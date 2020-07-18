@@ -90,8 +90,11 @@ This was used to get light view screen coordinate and depth.
 
     The shadow is cast only in the field of view of the light source. So, care must be taken for the field of view of the observer’s to be encompassed within the field of view of light. This is important as transformation between two image spaces is carried out to determine shadow. By default, the objects that lie outside the field of view of the light are illuminated. Shadow is formed only for objects lying in view-volume of light source.
 
-image2.png
-The image shows the local axes. Red (X), Green(Y), Blue(Z).
+<p align="center">
+  <img src="https://github.com/Shreeya1699/Computer_Graphics-Shadows/blob/master/images/image2.png" width="350" title="">
+  <img src="https://github.com/Shreeya1699/Computer_Graphics-Shadows/blob/master/images/image2.png" width="350" alt="The image shows the local axes. Red (X), Green(Y), Blue(Z).">
+</p>
+
 
 The light is black square on the wall, and shadows can be observed with respect to it.
 
