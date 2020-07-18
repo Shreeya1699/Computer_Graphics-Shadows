@@ -93,7 +93,8 @@ The shadow is cast only in the field of view of the light source. So, care must 
 <p align="center">
   <img src="https://github.com/Shreeya1699/Computer_Graphics-Shadows/blob/master/images/image2.png" width="200" title="The image shows the local axes. Red (X), Green(Y), Blue(Z).">
 </p>
-
+                                        
+                                       The image shows the local axes. Red (X), Green(Y), Blue(Z).
 
 The light is black square on the wall, and shadows can be observed with respect to it.
 
@@ -101,12 +102,15 @@ a. From the observer’s point of view.
 <p align="center">
   <img src="https://github.com/Shreeya1699/Computer_Graphics-Shadows/blob/master/images/image1.png" width="600" title="From the observer's point of view, whose eye is at (4,6,4) wrt to local axes as shown in the figure of coordinate axes above.">
 </p>
-
+                               
+                               From the observer's point of view, whose eye is at (4,6,4) wrt to local axes as shown in the figure of coordinate axes above.
+                                
 b. From the light’s point of view.
 <p align="center">
   <img src="https://github.com/Shreeya1699/Computer_Graphics-Shadows/blob/master/images/image3.png" width="600" title="From the light’s point of view. Hence, everything is illuminated in this picture and no shadows can be seen, as it is from light’s point of view. It is located at (0,3.6,-2.4) wrt to local axes as shown in the image of the coordinates above.">
 </p>
-
+            
+            From the light’s point of view. Hence, everything is illuminated in this picture and no shadows can be seen, as it is from light’s point of view. It is located at (0,3.6,-2.4) wrt to local axes as shown in the image of the coordinates above.
 
 ### Self-Shadowing and how to avoid it-
 
