@@ -91,7 +91,7 @@ This was used to get light view screen coordinate and depth.
 The shadow is cast only in the field of view of the light source. So, care must be taken for the field of view of the observer’s to be encompassed within the field of view of light. This is important as transformation between two image spaces is carried out to determine shadow. By default, the objects that lie outside the field of view of the light are illuminated. Shadow is formed only for objects lying in view-volume of light source.
 
 <p align="center">
-  <img src="https://github.com/Shreeya1699/Computer_Graphics-Shadows/blob/master/images/image2.png" width="350" alt="The image shows the local axes. Red (X), Green(Y), Blue(Z).">
+  <img src="https://github.com/Shreeya1699/Computer_Graphics-Shadows/blob/master/images/image2.png" width="200" title="The image shows the local axes. Red (X), Green(Y), Blue(Z).">
 </p>
 
 
@@ -99,12 +99,12 @@ The light is black square on the wall, and shadows can be observed with respect 
 
 a. From the observer’s point of view.
 <p align="center">
-  <img src="https://github.com/Shreeya1699/Computer_Graphics-Shadows/blob/master/images/image1.png" width="500" alt="From the observer's point of view, whose eye is at (4,6,4) wrt to local axes as shown in the figure of coordinate axes above.">
+  <img src="https://github.com/Shreeya1699/Computer_Graphics-Shadows/blob/master/images/image1.png" width="600" title="From the observer's point of view, whose eye is at (4,6,4) wrt to local axes as shown in the figure of coordinate axes above.">
 </p>
 
 b. From the light’s point of view.
 <p align="center">
-  <img src="https://github.com/Shreeya1699/Computer_Graphics-Shadows/blob/master/images/image3.png" width="500" alt="From the light’s point of view. Hence, everything is illuminated in this picture and no shadows can be seen, as it is from light’s point of view. It is located at (0,3.6,-2.4) wrt to local axes as shown in the image of the coordinates above.">
+  <img src="https://github.com/Shreeya1699/Computer_Graphics-Shadows/blob/master/images/image3.png" width="600" title="From the light’s point of view. Hence, everything is illuminated in this picture and no shadows can be seen, as it is from light’s point of view. It is located at (0,3.6,-2.4) wrt to local axes as shown in the image of the coordinates above.">
 </p>
 
 
