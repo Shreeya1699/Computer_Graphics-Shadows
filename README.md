@@ -88,10 +88,9 @@ This was used to get light view screen coordinate and depth.
 
 ### Results:
 
-    The shadow is cast only in the field of view of the light source. So, care must be taken for the field of view of the observer’s to be encompassed within the field of view of light. This is important as transformation between two image spaces is carried out to determine shadow. By default, the objects that lie outside the field of view of the light are illuminated. Shadow is formed only for objects lying in view-volume of light source.
+The shadow is cast only in the field of view of the light source. So, care must be taken for the field of view of the observer’s to be encompassed within the field of view of light. This is important as transformation between two image spaces is carried out to determine shadow. By default, the objects that lie outside the field of view of the light are illuminated. Shadow is formed only for objects lying in view-volume of light source.
 
 <p align="center">
-  <img src="https://github.com/Shreeya1699/Computer_Graphics-Shadows/blob/master/images/image2.png" width="350" title="">
   <img src="https://github.com/Shreeya1699/Computer_Graphics-Shadows/blob/master/images/image2.png" width="350" alt="The image shows the local axes. Red (X), Green(Y), Blue(Z).">
 </p>
 
@@ -99,14 +98,17 @@ This was used to get light view screen coordinate and depth.
 The light is black square on the wall, and shadows can be observed with respect to it.
 
 a. From the observer’s point of view.
-image1.png
-From the observer's point of view, whose eye is at (4,6,4) wrt to local axes as shown in the figure of coordinate axes above.
+<p align="center">
+  <img src="https://github.com/Shreeya1699/Computer_Graphics-Shadows/blob/master/images/image1.png" width="500" alt="From the observer's point of view, whose eye is at (4,6,4) wrt to local axes as shown in the figure of coordinate axes above.">
+</p>
 
 b. From the light’s point of view.
-image3.png
+<p align="center">
+  <img src="https://github.com/Shreeya1699/Computer_Graphics-Shadows/blob/master/images/image3.png" width="500" alt="From the light’s point of view. Hence, everything is illuminated in this picture and no shadows can be seen, as it is from light’s point of view. It is located at (0,3.6,-2.4) wrt to local axes as shown in the image of the coordinates above.">
+</p>
 
-Hence, everything is illuminated in this picture and no shadows can be seen, as it is from light’s point of view. It is located at (0,3.6,-2.4) wrt to local axes as shown in the image of the coordinates above.
-Self-Shadowing and how to avoid it-
+
+### Self-Shadowing and how to avoid it-
 
 When transformation is carried out from a point on the surface in the observer's view-space to the light source’s view-space, in ideal case, it should remain the part of the surface it was part of. But, due to imprecision of machine arithmetic and quantization of Z-buffer surfaces, it doesn’t exactly fall at a place it should have. So, a bias is added from the z-value after transforming it into the light space. This bias added ensures that points project in front of themselves, and thus do not shadow themselves. This problem is more evident in objects with curved surfaces.As a surface curves smoothly away from the light, however, it must ultimately shadow itself.A smooth surface shadowing itself in a shallow curve may switch from light to dark on the strength of a least significant bit in the Z-buffer. Worse, it may switch back and forth as the quantizing error beats with the sampling grid, producing a vivid moire. This is ensured by the function glReadPixels’s type field:
 
